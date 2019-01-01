@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+ext {
+    //类库的module名、bintray上项目名、artifactId最好是一致的
+    jjdxm_bintrayRepo = 'maven'
+    jjdxm_bintrayName = 'jjdxm-ijkplayer'
+
+    jjdxm_packaging = 'aar'
+    jjdxm_groupId = 'com.dou361.ijkplayer'
+    jjdxm_artifactId = 'jjdxm-ijkplayer'
+
+    jjdxm_libraryVersion = '1.0.6'
+    jjdxm_libraryName = 'jjdxm-ijkplayer'
+    jjdxm_libraryDescription = 'this is a ijkplayer library of the application'
+
+    jjdxm_siteUrl = 'https://github.com/jjdxmashl/jjdxm_ijkplayer'
+    jjdxm_gitUrl = 'https://github.com/jjdxmashl/jjdxm_ijkplayer.git'
+
+    jjdxm_developerId = 'jjdxmashl'
+    jjdxm_developerName = 'jjdxmashl'
+    jjdxm_developerEmail = '316988670@qq.com'
+
+    jjdxm_licenseName = 'The Apache Software License, Version 2.0'
+    jjdxm_licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    jjdxm_allLicenses = ["Apache-2.0"]
+
+    jjdxm_singlePath = 'build/intermediates/classes/release'
+    jjdxm_singleJar = jjdxm_artifactId+'-'+jjdxm_libraryVersion+'.jar'
+}
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    //implementation 'com.dou361.ijkplayer-armv7a:jjdxm-ijkplayer-armv7a:1.0.0'
+}
+//apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bulidlib.gradle'
+//apply from: 'https://raw.githubusercontent.com/jjdxmashl/jjdxm_ecodingprocess/master/bintray.gradle'

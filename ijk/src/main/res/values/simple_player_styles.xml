@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SeekBarAppTheme">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:progressDrawable">
+            @drawable/simple_player_progress_horizontal_holo_dark
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/simple_player_progress_horizontal_holo_dark
+        </item>
+        <item name="android:thumb">@drawable/simple_player_control_selector_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+
+    </style>
+</resources>

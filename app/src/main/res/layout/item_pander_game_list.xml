@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="3dp"
+    android:id="@+id/item_pander_game_list"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pander_game_list_img"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/pander_game_list_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#74939393"
+            android:text="test"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pander_game_list_tv_name"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/pander_game_list_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:text="100"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pander_game_list_tv_count"
+            android:src="@drawable/ic_watching" />
+
+    </RelativeLayout>
+
+</LinearLayout>

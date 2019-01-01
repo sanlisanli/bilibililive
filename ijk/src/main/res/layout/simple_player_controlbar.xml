@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_bottom_bar"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#CC000000"
+              android:gravity="center_vertical"
+              android:minHeight="48dp"
+              android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/app_video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/simple_player_arrow_white_24dp"/>
+
+    <LinearLayout
+        android:id="@+id/app_video_process_panl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/app_video_currentTime_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="06:21"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/app_video_lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/app_video_currentTime_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:21"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/app_video_endTime_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:10"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/app_video_seekBar"
+                style="@style/SeekBarAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/app_video_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/app_video_currentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:21"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/app_video_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:10"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/app_video_endTime_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="10:10"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_video_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="标清"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"/>
+
+    <ImageView
+        android:id="@+id/ijk_iv_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/simple_player_iv_rotation"/>
+
+    <ImageView
+        android:id="@+id/app_video_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/simple_player_icon_fullscreen_stretch"/>
+
+</LinearLayout>
