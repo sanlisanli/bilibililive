@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:gravity="center_vertical">
+            <LinearLayout
+
+                android:id="@+id/layout_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_drawer_home" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="4dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/ic_bili" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="sanlisanli"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"/>
+                <ImageView
+                    android:src="@drawable/ic_toolbar_menu_game"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="36dp"/>
+                <ImageView
+                    android:src="@drawable/ic_toolbar_menu_download"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="8dp"/>
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="36dp"/>
+                <ImageView
+                    android:src="@drawable/ic_toolbar_menu_search"
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <!--<include layout="@layout/content_main" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</android.support.design.widget.CoordinatorLayout>

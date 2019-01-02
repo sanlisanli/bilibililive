@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_index"
+            android:icon="@drawable/ic_nav_index"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_vip"
+            android:icon="@drawable/ic_nav_vip"
+            android:title="我的大会员" />
+        <item
+            android:id="@+id/nav_point"
+            android:icon="@drawable/ic_nav_point"
+            android:title="会员积分" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/ic_nav_download"
+            android:title="离线缓存" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shoucang"
+            android:icon="@drawable/ic_nav_star"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_nav_history"
+            android:title="历史记录" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_nav_people"
+            android:title="我的关注" />
+        <item
+            android:id="@+id/nav_qianbao"
+            android:icon="@drawable/ic_nav_qianbao"
+            android:title="B站钱包" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_color"
+            android:icon="@drawable/ic_nav_color"
+            android:title="主题选择" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_nav_shop"
+            android:title="应用推荐" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_nav_settings"
+            android:title="设置与帮助" />
+    </group>
+
+
+</menu>
