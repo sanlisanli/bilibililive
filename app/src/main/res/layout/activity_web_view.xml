@@ -3,7 +3,10 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/layout_include_toolbar"/>
-    <ProgressBar
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
         android:max="100"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:id="@+id/progress_bar"
@@ -14,6 +17,5 @@
         android:layout_height="match_parent"
         android:id="@+id/web_view">
     </WebView>
-
-
+    </RelativeLayout>
 </LinearLayout>
