@@ -10,7 +10,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RequestManager {
     private static RequestManager requestManager;
-    //单例模式
+    private RequestManager(){}
+    //单例模式，推荐
     public static RequestManager getInstance(){
         if (requestManager==null){
             synchronized (RequestManager.class){
